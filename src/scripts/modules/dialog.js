@@ -12,7 +12,6 @@ export default class Dialog {
 
   // 初期設定
   init() {
-    console.log('Dialog initialized');
     this.bindEvents();
   }
 

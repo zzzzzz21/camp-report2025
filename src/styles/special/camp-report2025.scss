@@ -509,13 +509,13 @@ div#main {
 }
 
 .c-common-headline--schedule::after {
-  background: url(../../img/special/camp-report2025/icon01-2.png);
+  background: url(/img/special/camp-report2025/icon01-2.png);
   height: 67px;
   width: 73px;
 }
 
 .c-common-headline--guest::after {
-  background: url(../../img/special/camp-report2025/icon02-2.png);
+  background: url(/img/special/camp-report2025/icon02-2.png);
   height: 70px;
   width: 74px;
 }
@@ -532,30 +532,22 @@ div#main {
   }
 }
 
-.c-common-headline--campaign::after {
-  background: url(../../img/special/camp-report2025/icon03-2.png);
-}
-
 .c-common-headline--gift::after {
-  background: url(../../img/special/camp-report2025/icon03-3.png);
+  background: url(/img/special/camp-report2025/icon03-3.png);
+}
+
+.c-common-headline--campaign::after {
+  background: url(/img/special/camp-report2025/icon03-2.png);
 }
 
 .c-common-headline--contents::after {
-  background: url(../../img/special/camp-report2025/icon04-2.png);
+  background: url(/img/special/camp-report2025/icon04-2.png);
   height: 69px;
   left: -38px;
   top: -48px;
   width: 74px;
 }
 
-
-.c-common-headline--contents::after {
-  background: url(../../img/special/camp-report2025/icon04-2.png);
-  height: 69px;
-  left: -38px;
-  top: -48px;
-  width: 74px;
-}
 .c-pageMain__banner {
 	margin: 0 auto 60px;
 	width: 320px;

@@ -468,32 +468,42 @@
 }
 
 .c-common-headline--schedule::after {
-  background: url(../../../img/special/camp-report2025/icon01-2.png);
+  background: url(/img/special/camp-report2025/icon01-2.png);
   background-size: 100%;
   height: calc(67px/2);
   width: calc(73px/2);
 }
 
 .c-common-headline--guest::after {
-  background: url(../../../img/special/camp-report2025/icon02-2.png);
+  background: url(/img/special/camp-report2025/icon02-2.png);
   background-size: 100%;
   height: calc(70px/2);
   width: calc(74px/2);
 }
 
-.c-common-headline--gift {
+.c-common-headline--gift,
+.c-common-headline--campaign {
+  background-color: #ffcb00;
   color: #FFF;
+
+  &::after {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: calc(71px/2);
+    width: calc(73px/2);
+  }
 }
 
 .c-common-headline--gift::after {
-  background: url(../../../img/special/camp-report2025/icon03-2.png);
-  background-size: 100%;
-  height: calc(71px/2);
-  width: calc(73px/2);
+  background-image: url(/img/special/camp-report2025/icon03-2.png);
+}
+
+.c-common-headline--campaign::after {
+  background-image: url(/img/special/camp-report2025/icon03-3.png);
 }
 
 .c-common-headline--contents::after {
-  background: url(../../../img/special/camp-report2025/icon04-2.png);
+  background: url(/img/special/camp-report2025/icon04-2.png);
   background-size: 100%;
   height: calc(69px/2);
   width: calc(74px/2);
@@ -576,8 +586,15 @@
 }
 
 .l-pageGift {
-  background: #ffcb00;
-  padding: 54px 0;
+  background-color: #ffdb00;
+  padding: 24px 0;
+}
+
+.c-pageGift {
+  background-color: #ffcc00;
+  box-sizing: border-box;
+  margin: -40px auto 0;
+  padding: 32px 0 50px;
 }
 
 .c-pageGift__text {
@@ -667,7 +684,7 @@
 
 .l-pageCampaign {
   background-color: #ffcc00;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .m-button-type1 {
@@ -691,6 +708,49 @@
 
 .m-button-type1__text {
   font-size: 15px;
+}
+
+
+.m-button-type2 {
+  background-color: #000;
+  border-radius: 4px;
+  display: inline-flex;
+  padding: 8px 26px 8px 68px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &::before {
+    background: #FFCC00;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    left: 24px;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    transform: rotate(45deg);
+    left: 32px;
+  }
+}
+
+.m-button-type2__text {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .m-widget-dialog {
