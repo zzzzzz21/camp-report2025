@@ -323,12 +323,14 @@
 
 .l-pageHeader {
   padding: calc(35 / 640 * 100vw) 0;
-  background-image: url(../../../img/special/camp-report2025/bg.jpg);
+  background-image: none;
 }
 
-.c-pageHeader__traveler img {
-  width: 167px;
-  margin: 0 10px 0 auto;
+.c-pageHeader {
+  background-image: url(/img/special/camp-report2025/bg01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
 }
 
 .c-pageHeader__title {
@@ -877,7 +879,7 @@
 
 .l-pageBanner {
   background-color: #eff0f4;
-  padding: 80px 20px;
+  padding: 40px 10px;
 }
 
 .m-block-banner {
@@ -886,17 +888,17 @@
 }
 
 .m-block-banner__text {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .l-pageSponsor {
   max-width: 1164px;
-  margin: 70px auto 0;
+  padding: 40px 10px;
 }
 
 .m-heading-type02 {
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
 
   span {
@@ -930,7 +932,7 @@
 }
 
 .un-sponsor {
-  margin: 80px 0 100px;
+  margin: 40px 0 50px;
   text-align: center;
 }
 
@@ -944,12 +946,12 @@
   margin-top: 40px;
 
   dt {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
   }
 
   dd {
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 0 0;
   }
 }
@@ -979,34 +981,43 @@
 }
 
 .un-sponsor-content {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  display: grid;
+  gap: 10px;
 }
 
 .un-sponsor-content__movie {
-  border-radius: 18px;
-  height: 254px;
+  border-radius: 4px;
+  height: 0;
   overflow: hidden;
-  width: 452px;
+  padding: 56.25% 0 0;
+  position: relative;
+  width: 100%;
 
   iframe {
     height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
   }
 }
 
 .un-sponsor-content__icon {
-  margin-left: 50px;
+  img {
+    margin: 0 auto;
+    max-width: 120px;
+  }
 }
 
 .un-sponsor-content__sns {
   text-align: center;
-  margin-left: 65px;
 }
 
 .un-sponsor-content__snsHeading {
-  font-size: 66px;
+  img {
+    margin: 0 auto;
+    width: 120px;
+  }
 }
 
 .un-sponsor-content__snsText {
@@ -1030,13 +1041,14 @@
 
   a {
     box-sizing: border-box;
-    padding: 30px;
+    padding: 15px;
   }
 }
 
 .m-list-article {
-  display: flex;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -1050,29 +1062,29 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-top: 24px;
+  margin-top: 12px;
 }
 
 .m-list-article__heading {
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
 
 .m-list-article__text {
-  font-size: 16px;
-  line-height: 1.9;
-  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 .m-list-article__link {
   margin-top: auto;
-  padding-top: 45px;
+  padding-top: 10px;
   text-align: right;
   a {
     color: #0066FF;
-    font-size: 16px;
+    font-size: 13px;
 
     &:hover {
       color: #0066FF;
