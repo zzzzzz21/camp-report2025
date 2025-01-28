@@ -608,6 +608,10 @@ div#main {
   display: block;
   margin: 0 0 10px;
   min-height: 21px;
+
+  &:has(+ span.team) {
+    margin-bottom: 0;
+  }
 }
 
 .c-pageMain__schedule table td span.cool {
@@ -632,6 +636,10 @@ div#main {
 
 .c-pageMain__schedule table .multitime {
   font-size: 14px;
+
+  & + .team {
+    margin-top: 10px;
+  }
 }
 
 .l-pageGuest {
@@ -951,6 +959,7 @@ div#main {
 }
 
 .m-widget-dialog__outer {
+  padding-top: 30px;
   position: relative;
 }
 
@@ -967,12 +976,12 @@ div#main {
   border: none;
   font-size: 0;
   cursor: pointer;
-  height: 36px;
+  height: 21px;
   position: absolute;
   transition: all ease .3s;
   right: 0;
   top: 0;
-  width: 36px;
+  width: 21px;
 
   &:hover {
     opacity: 0.5;

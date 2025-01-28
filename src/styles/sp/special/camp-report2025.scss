@@ -778,13 +778,18 @@
 
 .un-campaign-content {
   display: flex;
+  flex-direction: column;
   gap: 70px;
-  padding: 0 46px 0 91px;
+  padding: 10px 10px;
 }
 
 .un-campaign-content__image {
-  flex: 3.23;
-  max-width: 323px;
+  display: flex;
+
+  img {
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 .un-campaign-content__detail {
