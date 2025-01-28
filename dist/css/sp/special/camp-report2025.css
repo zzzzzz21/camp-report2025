@@ -1,0 +1,1143 @@
+@import url("https://sky-a.asahi.co.jp/css/sp/special/camp-report2020.css");
+.special-movie__visual {
+  position: relative;
+  display: block;
+}
+
+.special-movie__visual::before {
+  content: "";
+  background: url(/img/top/top_youtube.png) center top no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 70px;
+  height: 47px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.special-movie__wrapper {
+  appearance: none;
+  background: transparent;
+  border: none;
+}
+
+.special-movie__text {
+  font-size: 18px;
+  line-height: 1.3;
+  display: block;
+  margin: 16px 0 0;
+}
+
+.special-movie-modal-ovarlay,
+.c-movie-modal-ovarlay {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.special-movie-modal-content,
+.c-movie-modal-content {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background: #fff;
+  position: fixed;
+  display: none;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.special-movie-modal-content__close,
+.c-movie-modal-content__close {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.special-movie-modal-content__close::before, .special-movie-modal-content__close::after,
+.c-movie-modal-content__close::before,
+.c-movie-modal-content__close::after {
+  content: "";
+  background: #FFF;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 10px;
+  left: 0;
+}
+
+.special-movie-modal-content__close::before,
+.c-movie-modal-content__close::before {
+  transform: rotate(-45deg);
+}
+
+.special-movie-modal-content__close::after,
+.c-movie-modal-content__close::after {
+  transform: rotate(45deg);
+}
+
+.special-movie-modal-content__inner,
+.c-movie-modal-content__inner {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.special-movie-modal-content__inner > iframe,
+.c-movie-modal-content__inner > iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c-table-usage {
+  margin: 10px 10px 0;
+}
+
+.c-table-usage__live {
+  color: red;
+}
+
+.c-table-usage__video {
+  color: #5153ff;
+}
+
+.c-commonTag {
+  background: #cc0000;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 6px;
+}
+
+.c-commonProgram + .c-commonProgram {
+  margin-top: 45px;
+}
+
+.c-commonProgram__title {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.c-commonProgram__content {
+  margin: 10px 0 0;
+}
+
+.c-commonProgram__image img {
+  width: 100%;
+}
+
+.c-commonProgram__detail {
+  flex: 1;
+  padding: 10px 10px 0;
+}
+
+.c-commonProgram__name {
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 14px;
+}
+
+.c-commonProgram__text {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.c-commonProgram__text + .c-commonProgram__text {
+  margin-top: 15px;
+}
+
+.c-commonProgram__dl {
+  display: flex;
+}
+
+.c-commonProgram__dt {
+  white-space: nowrap;
+}
+
+.c-commonProgram__dd {
+  flex: 1;
+}
+
+.c-parenthesis-title {
+  align-items: center;
+  background: inherit;
+  box-sizing: border-box;
+  color: #999;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 54px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+
+.c-parenthesis-title::before, .c-parenthesis-title::after {
+  content: "";
+  position: absolute;
+}
+
+.c-parenthesis-title::before {
+  border: 3px solid #FFF;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.c-parenthesis-title::after {
+  background: inherit;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  width: calc(100% - 30px);
+}
+
+.c-parenthesit-title__text {
+  position: relative;
+  z-index: 1;
+}
+
+.c-movieList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.c-movieList__item {
+  display: flex;
+  flex-direction: column;
+  width: 48.75%;
+  margin: 0 0 16px;
+}
+
+.c-movieList__button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3;
+}
+
+.c-movieList__button:focus, .c-movieList__button:hover {
+  outline: none;
+  opacity: 0.5;
+}
+
+.c-movieList__none {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-movieList__image {
+  height: auto;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0;
+}
+
+.c-movieList__image--grayButton::before, .c-movieList__image--grayButton::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.c-movieList__image--grayButton::before {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  z-index: 1;
+}
+
+.c-movieList__image--grayButton::after {
+  border-style: solid;
+  border-width: 12.5px 0 12.5px 20px;
+  border-color: transparent transparent transparent #FFF;
+  border-radius: 3px;
+  height: 0;
+  transform: translate(2px, 2px);
+  width: 0;
+  z-index: 2;
+}
+
+.c-movieList__image img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-movieList__text {
+  display: block;
+  font-size: 13px;
+  margin: auto 0 0;
+  padding: 10px 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.l-pageHeader {
+  padding: 5.46875vw 0;
+  background-image: none;
+}
+
+.c-pageHeader {
+  background-image: url(/img/special/camp-report2025/bg01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+.c-pageHeader__title {
+  margin: 10px auto 12.5vw;
+}
+
+.c-pageHeader__information {
+  color: #FFF;
+}
+
+.c-pageHeader__credit {
+  color: #999;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.c-pageHeader-bottom {
+  background-color: #333;
+  padding-bottom: 20px;
+}
+
+.c-pageNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 0;
+  padding: 0 30px;
+}
+
+.c-pageNavigation__item {
+  border-left: 1px solid #999;
+  box-sizing: border-box;
+  color: #FFF;
+  text-align: center;
+  width: 50%;
+}
+
+.c-pageNavigation__item:nth-of-type(even) {
+  border-right: 1px solid #999;
+}
+
+.c-pageNavigation__link {
+  color: inherit;
+  padding: 13px 10px 6px;
+}
+
+.c-pageNavigation__link:hover {
+  color: inherit;
+}
+
+.c-pageNavigation__icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.c-pageNavigation__icon img {
+  margin: 0 auto;
+}
+
+.c-pageMain__lead {
+  background: #FFF;
+  padding: 0;
+}
+
+.c-pageMain__schedule {
+  padding-top: 7.5vw;
+}
+
+.c-pageMain__schedule__wrap {
+  margin: 20px 0 0;
+}
+
+.schedule table td.live-match {
+  background: #ffffc9;
+}
+
+.schedule table td .content {
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.schedule table td .cool {
+  color: #999;
+}
+
+.schedule table td div {
+  flex: 1;
+  max-width: 100%;
+  padding-right: 5px;
+}
+
+.schedule table td div .guest {
+  font-weight: normal;
+}
+
+.c-pageMain__banner {
+  margin: 0 auto 60px;
+  width: 320px;
+  text-align: center;
+}
+
+.c-pageMain__banner__link {
+  display: block;
+}
+
+.c-pageMain__catch {
+  margin-bottom: 45px;
+}
+
+.c-common-headline {
+  border: 3px solid #FFF;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+}
+
+.c-common-headline::after {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: -21px;
+}
+
+.c-common-headline--contents, .c-common-headline--schedule {
+  border-color: #eff1f4;
+}
+
+.c-common-headline--schedule {
+  color: #c00;
+}
+
+.c-common-headline--schedule::after {
+  background: url(/img/special/camp-report2025/icon01-2.png);
+  background-size: 100%;
+  height: 33.5px;
+  width: 36.5px;
+}
+
+.c-common-headline--guest::after {
+  background: url(/img/special/camp-report2025/icon02-2.png);
+  background-size: 100%;
+  height: 35px;
+  width: 37px;
+}
+
+.c-common-headline--gift,
+.c-common-headline--campaign {
+  background-color: #ffcb00;
+  color: #FFF;
+}
+.c-common-headline--gift::after,
+.c-common-headline--campaign::after {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 35.5px;
+  width: 36.5px;
+}
+
+.c-common-headline--gift::after {
+  background-image: url(/img/special/camp-report2025/icon03-2.png);
+}
+
+.c-common-headline--campaign::after {
+  background-image: url(/img/special/camp-report2025/icon03-3.png);
+}
+
+.c-common-headline--contents::after {
+  background: url(/img/special/camp-report2025/icon04-2.png);
+  background-size: 100%;
+  height: 34.5px;
+  width: 37px;
+}
+
+.l-pageGuest {
+  background: #eff1f4;
+  padding: 40px 0;
+}
+
+.c-pageGuest {
+  margin: 32px auto 0;
+}
+
+.c-guestList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.c-guestList + .c-guestList {
+  margin-top: 36px;
+}
+
+.c-guestList__item {
+  height: 0;
+  position: relative;
+  width: 50%;
+  padding: 42.54386% 0 0;
+}
+
+.c-guestList__title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.c-guestList__item--text {
+  align-items: center;
+  background: #CCC;
+  color: #FFF;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-guestList__image {
+  background-color: #FFF;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.c-guestList__image img {
+  width: 100%;
+}
+
+.c-guestList__text {
+  background: rgba(102, 102, 102, 0.5);
+  bottom: 0;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.95;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.c-guestList__copy {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+
+.l-pageGift {
+  background-color: #ffdb00;
+  padding: 24px 0;
+}
+
+.c-pageGift {
+  background-color: #ffcc00;
+  box-sizing: border-box;
+  margin: -40px auto 0;
+  padding: 32px 0 50px;
+}
+
+.c-pageGift__content {
+  margin: 60px auto 0;
+  width: 100%;
+}
+
+.c-pageGift__image {
+  margin-top: 10px;
+}
+
+.c-pageGift__image img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.c-pageGift__text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 25px 20px 0;
+}
+
+.c-pageGift__title {
+  font-weight: bold;
+}
+
+.c-pageGift__term {
+  margin-top: 1em;
+}
+
+.c-pageGift__tel a {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 36px;
+}
+
+.c-pageGift__icon {
+  display: inline;
+  height: 18px;
+  vertical-align: middle;
+  width: 18px;
+}
+
+.c-pageGift__dl {
+  display: flex;
+}
+
+.c-pageGift__dt {
+  white-space: nowrap;
+}
+
+.c-pageGift__dd {
+  flex: 1;
+}
+
+.l-pageProgram {
+  padding: 40px 0;
+}
+
+.c-pageProgram {
+  margin: 50px 0 0;
+}
+
+.l-pageMovie {
+  background: #eff1f4;
+  padding: 40px 0 20px;
+}
+
+.c-pageMovie-link {
+  color: #5153ff;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.c-pageMovie-link a {
+  color: inherit;
+}
+
+
+.l-pageCampaign {
+  background-color: #ffcc00;
+  padding: 40px 0;
+}
+
+.m-button-type1 {
+  background-color: #FFCC00;
+  border-radius: 21px;
+  display: inline-flex;
+  padding: 14px 24px 14px 68px;
+  position: relative;
+}
+.m-button-type1::before, .m-button-type1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: right ease 0.3s;
+}
+
+.m-button-type1__text {
+  font-size: 15px;
+}
+
+.m-button-type2 {
+  background-color: #000;
+  border-radius: 4px;
+  display: inline-flex;
+  padding: 8px 26px 8px 68px;
+  position: relative;
+}
+.m-button-type2::before, .m-button-type2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.m-button-type2::before {
+  background: #FFCC00;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: 24px;
+}
+.m-button-type2::after {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  transform: rotate(45deg);
+  left: 32px;
+}
+
+.m-button-type2__text {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.m-widget-dialog {
+  background-color: transparent;
+  border: none;
+  margin: auto;
+}
+.m-widget-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.m-widget-dialog__title {
+  color: #fff;
+  display: block;
+  font-size: 36px;
+  text-align: center;
+}
+
+.m-widget-dialog__outer {
+  position: relative;
+}
+
+.m-widget-dialog__content {
+  background: #fff;
+  box-sizing: border-box;
+  max-width: 640px;
+  padding: 30px;
+}
+
+.m-widget-dialog__close {
+  appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  height: 36px;
+  position: absolute;
+  transition: all ease 0.3s;
+  right: 0;
+  top: 0;
+  width: 36px;
+}
+.m-widget-dialog__close:hover {
+  opacity: 0.5;
+}
+.m-widget-dialog__close span {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.m-widget-dialog__close span::before, .m-widget-dialog__close span::after {
+  background-color: #FFF;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 100%;
+  z-index: 2;
+}
+.m-widget-dialog__close span::before {
+  transform: rotate(45deg);
+}
+.m-widget-dialog__close span::after {
+  transform: rotate(-45deg);
+}
+
+.m-widget-dialog__heading {
+  display: block;
+  font-size: 30px;
+}
+
+.m-widget-dialog__text {
+  white-space: pre-wrap;
+}
+
+.un-campaign {
+  background-color: #03dfc8;
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: -42px auto 0;
+  padding: 90px 0;
+}
+
+.un-campaign-lead {
+  font-size: 18px;
+  text-align: center;
+}
+
+.un-campaign-heading {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+
+.un-campaign-content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 10px 10px;
+}
+
+.un-campaign-content__image {
+  display: flex;
+}
+.un-campaign-content__image img {
+  flex: 1;
+  max-width: 50%;
+}
+
+.un-campaign-content__detail {
+  flex: 5.73;
+}
+
+.un-campaign-dl {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.un-campaign-dl__item {
+  font-size: 18px;
+}
+.un-campaign-dl__item dt {
+  font-weight: bold;
+}
+.un-campaign-dl__item dd {
+  line-height: 1.75;
+}
+
+.un-campaign-map {
+  display: flex;
+  gap: 30px;
+}
+
+.un-campaign-map__item {
+  text-align: center;
+  width: 270px;
+}
+
+.un-campaign-map__heading {
+  display: block;
+}
+
+.un-campaign-map__button {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  position: relative;
+}
+.un-campaign-map__button:hover {
+  opacity: 0.5;
+}
+.un-campaign-map__button::before {
+  background-color: #000;
+  border-radius: 50%;
+  content: "";
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 22px;
+  z-index: 1;
+}
+
+.un-campaign-map__image {
+  position: relative;
+}
+.un-campaign-map__image::before, .un-campaign-map__image::after {
+  background-color: #FFF;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 12px;
+  z-index: 2;
+}
+.un-campaign-map__image::before {
+  transform: rotate(90deg);
+}
+
+.un-campaign-map__lead {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.l-pageBanner {
+  background-color: #eff0f4;
+  padding: 40px 10px;
+}
+
+.m-block-banner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.m-block-banner__text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.l-pageSponsor {
+  max-width: 1164px;
+  padding: 40px 10px;
+}
+
+.m-heading-type02 {
+  font-size: 18px;
+  text-align: center;
+}
+.m-heading-type02 span {
+  border: 6px solid #eff1f4;
+  padding: 8px 48px;
+  display: inline-block;
+  position: relative;
+}
+.m-heading-type02 span::before, .m-heading-type02 span::after {
+  background-color: #fff;
+  content: "";
+  width: calc(100% - 40px);
+  height: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+}
+.m-heading-type02 span::before {
+  top: -6px;
+}
+.m-heading-type02 span::after {
+  bottom: -6px;
+}
+
+.un-sponsor {
+  margin: 40px 0 50px;
+  text-align: center;
+}
+
+.un-sponsor-heading img {
+  margin: 0 auto;
+}
+
+.un-sponsor-dl {
+  margin-top: 40px;
+}
+.un-sponsor-dl dt {
+  font-size: 20px;
+  font-weight: bold;
+}
+.un-sponsor-dl dd {
+  font-size: 15px;
+  margin: 10px 0 0;
+}
+
+.un-sponsor-link {
+  margin: 20px 0 0;
+}
+.un-sponsor-link a {
+  color: #0066FF;
+  font-size: 18px;
+}
+.un-sponsor-link a:hover {
+  color: #0066FF;
+  text-decoration: underline;
+  opacity: 1;
+}
+.un-sponsor-link a::before {
+  background: url(/img/special/camp-report2025/icon-arrow03.png) center no-repeat;
+  content: "";
+  border-radius: 50%;
+  margin: 0 4px 0 0;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.un-sponsor-content {
+  display: grid;
+  gap: 10px;
+}
+
+.un-sponsor-content__movie {
+  border-radius: 4px;
+  height: 0;
+  overflow: hidden;
+  padding: 56.25% 0 0;
+  position: relative;
+  width: 100%;
+}
+.un-sponsor-content__movie iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.un-sponsor-content__icon img {
+  margin: 0 auto;
+  max-width: 120px;
+}
+
+.un-sponsor-content__sns {
+  text-align: center;
+}
+
+.un-sponsor-content__snsHeading img {
+  margin: 0 auto;
+  width: 120px;
+}
+
+.un-sponsor-content__snsText {
+  font-size: 18px;
+  margin: 14px 0 0px;
+}
+
+.m-list-sns {
+  display: flex;
+  justify-content: center;
+}
+
+.m-list-sns__item {
+  border-radius: 17px;
+  box-shadow: 2.57px 3.06px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.m-list-sns__item img {
+  width: 68px;
+}
+.m-list-sns__item a {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.m-list-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+
+.m-list-article__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.m-list-article__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.m-list-article__heading {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.m-list-article__text {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.m-list-article__link {
+  margin-top: auto;
+  padding-top: 10px;
+  text-align: right;
+}
+.m-list-article__link a {
+  color: #0066FF;
+  font-size: 13px;
+}
+.m-list-article__link a:hover {
+  color: #0066FF;
+  text-decoration: underline;
+  opacity: 1;
+}
+.m-list-article__link a::before {
+  background: url(/img/special/camp-report2025/icon-arrow03.png) center no-repeat;
+  content: "";
+  border-radius: 50%;
+  margin: 0 4px 0 0;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.js-dialog-open {
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.js-dialog-open:hover {
+  opacity: 0.5;
+}
