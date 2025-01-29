@@ -34,6 +34,7 @@
 </li>
 <% for (var i = 0; i < announcer.length; i++) { %>
 <li class="c-guestList__item">
+<% if (announcer[i].text) { %>
 <div class="js-dialog">
 <button class="js-dialog-open c-guestList__dialog">
 <div class="c-guestList__image">
@@ -52,6 +53,12 @@
 </div><!-- /.m-widget-dialog__outer -->
 </dialog>
 </div>
+<% } else { %>
+<div class="c-guestList__image c-guestList__image--noicon">
+<img alt="<%= announcer[i].name %>" src="/img/special/camp-report2025/<%= announcer[i].image %>" width="148" height="125"/>
+<p class="c-guestList__text"><%= announcer[i].name %></p>
+</div>
+<% } %>
 </li>
 <% } %>
 </ul>
@@ -61,14 +68,15 @@
 <section class="l-pageCampaign">
 <h3 class="c-common-headline c-common-headline--campaign">キャンプ地 キャンペーン</h3>
 <div class="un-campaign">
-<p class="un-campaign-lead">阪神タイガース×スカイＡ 春季キャンプ限定トートバッグをプレゼント!!</p>
-<b class="un-campaign-heading">阪神タイガース×スカイＡ Spring Camp宜野座・うるま（具志川）<br>デジタルスタンプラリー2025</b>
+<p class="un-campaign-lead">阪神タイガース×スカイＡ <br class="sp-only">春季キャンプ限定トートバッグをプレゼント!!</p>
+<b class="un-campaign-heading">阪神タイガース×スカイＡ <br class="sp-only">Spring Camp宜野座・うるま（具志川）<br>デジタルスタンプラリー2025</b>
 <div class="un-campaign-content">
 <div class="un-campaign-content__image">
-<img src="/img/special/camp-report2025/logo01.png" alt="">
-<img src="/img/special/camp-report2025/product01.png" alt="">
+<img src="/img/special/camp-report2025/logo01.png" alt="" class="un-campaign-content__logo">
+<img src="/img/special/camp-report2025/product01.png" alt="" class="un-campaign-content__product">
 </div>
 <div class="un-campaign-content__detail">
+<b class="un-campaign-content__heading">スタンプラリー概要</b>
 <dl class="un-campaign-dl">
 <div class="un-campaign-dl__item">
 <dt>【参加方法】</dt>
@@ -83,7 +91,7 @@
 <dd>阪神タイガース×スカイＡ 春季キャンプ限定トートバッグ<br>※12,000名様限定となります。 無くなり次第終了となりますので予めご了承ください。</dd>
 </div>
 <div class="un-campaign-dl__item">
-<dt>【景品】</dt>
+<dt>【MAP】</dt>
 <dd>
 <ul class="un-campaign-map">
 <li class="un-campaign-map__item">
@@ -134,6 +142,7 @@
 </dd>
 </div>
 </dl>
+<p class="un-campaign-content__note">※<span class="un-campaign-content__noteIcon">★</span>がスカイAブースの場所ですが変更となる場合がございます。</p>
 </div>
 </div>
 </div><!-- /.un-campaign -->

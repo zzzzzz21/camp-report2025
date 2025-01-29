@@ -1,5 +1,12 @@
 @import url("https://sky-a.asahi.co.jp/css/special/camp-report2020.css");
 
+.l-sns {
+  z-index: 21;
+}
+.main-contents p + p {
+  margin-top: 0;
+}
+
 .special-movie__wrapper {
   appearance: none;
   border: none;
@@ -385,9 +392,10 @@ div#main {
 }
 
 .c-pageHeader__information {
+  color: #FFF;
   font-size: 30px;
   letter-spacing: 0;
-  color: #FFF;
+  margin-bottom: 0;
   text-shadow: 4px 4px 4px black;
 }
 
@@ -397,6 +405,7 @@ div#main {
 }
 
 .c-pageHeader__text {
+  margin-bottom: 20px;
   text-shadow: 4px 4px 4px black;
 }
 
@@ -621,6 +630,13 @@ div#main {
   background: #ffffc9;
 }
 
+.c-pageMain__schedule table td.empty {
+  background: #fff;
+  .date {
+    color: #CCC;
+  }
+}
+
 .c-pageMain__schedule table div {
   margin-top: 0;
   min-height: 186px;
@@ -665,6 +681,7 @@ div#main {
 .c-guestList__title {
   align-items: center;
   display: flex;
+  font-size: 24px;
   justify-content: center;
 }
 
@@ -709,6 +726,12 @@ div#main {
     top: 10px;
     width: 22px;
     z-index: 1;
+  }
+
+  &--noicon {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -938,6 +961,9 @@ div#main {
   background-color: transparent;
   border: none;
   margin: auto;
+  max-height: unset;
+  max-width: unset;
+  overflow: hidden;
   &::backdrop {
     background: rgba(0, 0, 0, 0.75);
   }
@@ -951,7 +977,7 @@ div#main {
 }
 
 .m-widget-dialog__outer {
-  padding-top: 30px;
+  padding-top: 24px;
   position: relative;
 }
 
@@ -959,7 +985,9 @@ div#main {
   background: #fff;
   box-sizing: border-box;
   max-width: 640px;
+  overflow: auto;
   padding: 30px;
+  max-height: 92vh;
 }
 
 .m-widget-dialog__close {
@@ -991,7 +1019,7 @@ div#main {
       height: 3px;
       position: absolute;
       right: 0;
-      top: 15px;
+      top: 10px;
       width: 100%;
       z-index: 2;
     }
@@ -1012,6 +1040,7 @@ div#main {
 }
 
 .m-widget-dialog__text {
+  font-size: 18px;
   white-space: pre-wrap;
 }
 
@@ -1020,7 +1049,7 @@ div#main {
   box-sizing: border-box;
   max-width: 1100px;
   margin: -42px auto 0;
-  padding: 90px 0;
+  padding: 90px 0 80px;
 }
 
 .un-campaign-lead {
@@ -1029,9 +1058,10 @@ div#main {
 }
 
 .un-campaign-heading {
-  font-size: 30px;
-  text-align: center;
   display: block;
+  font-size: 30px;
+  margin: 0 0 40px;
+  text-align: center;
 }
 
 .un-campaign-content {
@@ -1041,18 +1071,45 @@ div#main {
 }
 
 .un-campaign-content__image {
+  align-items: center;
+  display: flex;
   flex: 3.23;
+  flex-direction: column;
+  gap: 40px;
   max-width: 323px;
+}
+
+.un-campaign-content__logo {
+  max-width: 306px
 }
 
 .un-campaign-content__detail {
   flex: 5.73
 }
 
+.un-campaign-content__heading {
+  background-color: #000;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.un-campaign-content__note {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.un-campaign-content__noteIcon {
+  color: #CC0000;
+}
+
 .un-campaign-dl {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 14px;
 }
 
 .un-campaign-dl__item {
@@ -1069,6 +1126,7 @@ div#main {
 .un-campaign-map {
   display: flex;
   gap: 30px;
+  padding-top: 10px;
 }
 
 .un-campaign-map__item {
@@ -1271,7 +1329,9 @@ div#main {
 
 .m-list-sns {
   display: flex;
+  gap: 17px;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .m-list-sns__item {
@@ -1285,7 +1345,7 @@ div#main {
 
   a {
     box-sizing: border-box;
-    padding: 30px;
+    padding: 25px 28px;
   }
 }
 
@@ -1355,4 +1415,8 @@ div#main {
   &:hover {
     opacity: 0.5;
   }
+}
+
+.sp-only {
+  display: none;
 }
