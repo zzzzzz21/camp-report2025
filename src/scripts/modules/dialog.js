@@ -15,9 +15,11 @@ export default class Dialog {
     this.bindEvents();
   }
 
+  // イベントを登録
   bindEvents() {
     this.openButton.addEventListener('click', () => this.openDialog());
     this.closeButton.addEventListener('click', () => this.closeDialog());
+    document.addEventListener('keydown', event => this.handleKeyDown(event));
   }
 
   openDialog() {
@@ -28,5 +30,11 @@ export default class Dialog {
   closeDialog() {
     this.dialog.close();
     document.body.style.overflow = '';
+  }
+
+  handleKeyDown(event) {
+    if (event.key === 'Escape' && this.dialog.open) {
+      this.closeDialog();
+    }
   }
 }
