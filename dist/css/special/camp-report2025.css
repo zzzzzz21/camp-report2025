@@ -1,6 +1,7 @@
 @import url("https://sky-a.asahi.co.jp/css/special/camp-report2020.css");
 .l-sns {
   z-index: 21;
+  top: 512px !important;
 }
 
 .main-contents p + p {
@@ -595,7 +596,7 @@ div#main {
 }
 
 .c-pageMain__schedule table td {
-  padding: 5px 0 24px 16px;
+  padding: 5px 8px 24px 8px;
 }
 
 .c-pageMain__schedule table td .date {
